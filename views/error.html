@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block title %}Error Page{% endblock %}
+
+{% block head %}
+{% parent %}
+<!--<link rel="stylesheet" href="custom.css">-->
+{% endblock %}
+
+{% block content %}
+<h1>[[message]]</h1>
+<h2>[[error.status]]</h2>
+<pre>[[error.stack]]</pre>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block head %}
+{% parent %}
+<!--<link rel="stylesheet" href="custom.css">-->
+{% endblock %}
+
+{% block content %}
+<h>Home Page</h> <br>
+<a href="/reactionTest">反应测试</a> <br>
+<a href="/2048">2048</a>
+
+{% endblock %}

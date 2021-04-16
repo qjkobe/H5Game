@@ -1,0 +1,17 @@
+extends layout.html
+
+block content
+  script.
+    console.log({pdts})
+  p= pdts
+  h1= title
+  table(border="1" width="80%")
+      tr
+        th 序号
+        th 名称
+        th 价格
+      each val, key in pdts
+        tr
+          td= key + 1
+          td= val.name
+          td= val.price

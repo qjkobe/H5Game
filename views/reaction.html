@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+{% block title %}[[title]]{% endblock %}
+{% block head %}
+{% parent %}
+{% endblock %}
+
+{% block content %}
+<div id="app">
+    {{ message }}
+</div>
+<table id="numTable">
+</table>
+{% endblock %}
+
+{% block script %}
+{% parent %}
+<script>
+  var testLength = "[[length]]";
+</script>
+<script src="/javascripts/reaction.js"></script>
+{% endblock %}
